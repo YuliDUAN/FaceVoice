@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_height="fill_parent">
+
+
+        <TextView android:text="意见反馈"
+            android:id="@+id/help_title"
+            android:background="#1788D8"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="0px" android:layout_height="0px"/>
+        <EditText android:text=""
+            android:id="@+id/help_feedback"
+            android:lines="8"
+            android:gravity="top"
+            android:hint="请输入您的反馈意见(字数500以内)！"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></EditText>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button android:text=""
+                android:id="@+id/but_help_feedback"
+                android:background="@drawable/wo_tijiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+
+        <TextView android:text="下面是常见问题"
+            android:id="@+id/help_allseequestions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:textColor="#000000"
+            android:layout_marginTop="10px"
+            android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_marginTop="10px"
+            android:paddingLeft="15px"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Q:积分怎么样获得,有什么好处？ \n A:在回答问题正确后，获取积分，积分代表你当前回答问题的能力水平."
+            android:layout_width="fill_parent"
+            android:id="@+id/help_1"></TextView>
+
+        <TextView android:layout_marginTop="10px"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingLeft="15px"
+            android:text="Q:重新做练习主题，是否可以更新积分? \n A:可以,积分去当前最高分"
+            android:layout_width="fill_parent"
+            android:id="@+id/help_2"
+
+            ></TextView>
+
+        <TextView android:layout_marginTop="10px"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingLeft="15px"
+            android:text="Q:未做结束后的主题退出后，是否可以重新做? \n A:可以继续重新做，且上次的测试时间保留."
+            android:layout_width="fill_parent"
+            android:id="@+id/help_3"
+
+            ></TextView>
+
+        <TextView android:layout_marginTop="10px"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingLeft="15px"
+            android:text="Q:已经做完的测试主题是否可以再做? \n A:不可以."
+            android:layout_width="fill_parent"
+            android:id="@+id/help_4"
+
+            ></TextView>
+        <TextView android:layout_marginTop="10px"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingLeft="15px"
+            android:text="Q:回答问题，获得积分的规则 \n A:坚持每天签到，积分会逐天累加。参与测试超过六十分也会获得一定的积分奖励（分数越高奖励越丰富）"
+            android:layout_width="fill_parent"
+            android:id="@+id/help_5"></TextView>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/popup_bg"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:id="@+id/rl_wechat"
+        style="@style/menu_item"
+        android:layout_marginTop="@dimen/menu_layout_margin">
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            style="@style/menu_textView"
+            android:text="@string/share_to_wechat" />
+
+        <ImageView
+            style="@style/menu_img"
+            android:layout_toLeftOf="@id/tv_wechat"
+            android:src="@drawable/ic_wechat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wechat_mm"
+        style="@style/menu_item">
+
+        <TextView
+            android:id="@+id/tv_wechat_mm"
+            style="@style/menu_textView"
+            android:text="@string/share_to_wechat_mm" />
+
+        <ImageView
+            style="@style/menu_img"
+            android:layout_toLeftOf="@id/tv_wechat_mm"
+            android:src="@drawable/ic_wechat_mm" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        style="@style/menu_item"
+        android:layout_marginBottom="@dimen/menu_view_margin"
+        android:text="@string/share_cancel"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+

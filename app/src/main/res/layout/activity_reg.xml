@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zhuce_bj"
+    android:orientation="vertical"
+    android:layout_width="fill_parent">
+    <LinearLayout
+        android:paddingTop="120dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:stretchColumns="1" >
+            <TableRow >
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/yonghu2" />
+
+                <EditText
+
+                    android:id="@+id/usernameRegister"
+                    android:layout_width="fill_parent"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="50dp"
+                    android:hint="请输入用户名！！！"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/mima2" />
+
+                <EditText
+                    android:id="@+id/passwordRegister"
+                    android:layout_width="fill_parent"
+                    android:singleLine="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:hint="请输入密码！！！" />
+            </TableRow>
+
+            <TableRow >
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/xingbie"/>
+                <RadioGroup
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/sexRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/woman"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/nan"
+                        android:text="男"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:layout_marginLeft="40dp"
+                        android:id="@id/woman"
+                        android:text="女"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+            </TableRow>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/Register"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/shape_green_content_normal"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

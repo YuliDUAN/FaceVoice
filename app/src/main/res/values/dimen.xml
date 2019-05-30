@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>    
+    <dimen name="margin_">10dp</dimen>
+    <dimen name="pading_">5dp</dimen>
+    <dimen name="btn_size">22sp</dimen>
+    <dimen name="txt_size">18sp</dimen>
+    <dimen name="menu_item_height">45dp</dimen>
+    <dimen name="menu_img_width">30dp</dimen>
+    <dimen name="menu_img_height">30dp</dimen>
+    <dimen name="menu_text_size">16sp</dimen>
+    <dimen name="menu_view_margin">15dp</dimen>
+    <dimen name="menu_layout_margin">20dp</dimen>
+    <!-- 分割线高度 -->
+    <dimen name="line_height">1dp</dimen>
+</resources>

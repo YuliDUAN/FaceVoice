@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dfdfdf" />
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:paddingTop="5dp"
+            android:id="@+id/rb_center"
+            style="@style/main_radiobutton_icon"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_zhong"
+            android:gravity="center_horizontal"
+            android:checked="true"
+            android:text="首页"
+            android:textSize="14sp"
+            android:layout_weight="1"  />
+
+        <RadioButton
+            android:paddingTop="9dp"
+            android:id="@+id/rb_resourcecenter"
+            style="@style/main_radiobutton_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_qian"
+            android:gravity="center_horizontal"
+            android:text="资源"
+            android:textSize="14sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_accountscenter"
+            style="@style/main_radiobutton_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hou"
+            android:gravity="center_horizontal"
+            android:paddingTop="9dp"
+            android:text="我的"
+            android:textSize="14sp" />
+
+
+    </RadioGroup>
+</LinearLayout>

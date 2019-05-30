@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageButton
+    android:layout_marginTop="50dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/icon"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="V2.0(20190502)"
+        android:textStyle="bold"/>
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wo_gengxin"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="基于AIUI语音评测，由APP创意俱乐部打造的。以语音评测为主，主打学生的口语能力的提升。也包含了其他语音方面的一些功能，语法识别，语音合成，天气查询，语音转写。倾力提高你的学习质量和品质生活。"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="APP创意俱乐部所有"
+        android:textStyle="bold"/>
+</LinearLayout>

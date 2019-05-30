@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.example.dk.facevoice"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile files('libs/Sunflower.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/AIUI.jar')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.2.3.jar')
+    compile files('libs/AIUI.jar')
+    compile files('libs/gson-2.2.3.jar')
+    compile files('libs/MobCommons-2019.0215.1821.jar')
+    compile files('libs/MobTools-2019.0213.1222.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/ShareSDK-Core-3.5.0.jar')
+    compile files('libs/ShareSDK-Email-3.5.0.jar')
+    compile files('libs/ShareSDK-QQ-3.5.0.jar')
+    compile files('libs/ShareSDK-QZone-3.5.0.jar')
+    compile files('libs/ShareSDK-ShortMessage-3.5.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.5.0.jar')
+    compile files('libs/ShareSDK-TencentWeibo-3.5.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.5.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.5.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.5.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.5.0.jar')
+    compile files('libs/Sunflower.jar')
+}
